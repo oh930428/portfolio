@@ -10,7 +10,7 @@
       content="Minseok's Portfolio No FrameWork version"
     />
     <meta name="author" content="Minseok" />
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="icon" type="image/png" href="./imgs/favicon.png" sizes="48x48" />
     <script
       src="https://kit.fontawesome.com/2ad5e67c4c.js"
       crossorigin="anonymous"
@@ -23,28 +23,43 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__profile-picture">
-        <img src="" alt="Minseok's picture" />
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">Myworks</li>
-      </ul>
-    </nav>
-    <!-- Home -->
-    <section id="home">
-      <p>
-        <i></i> I'm Minseok <br />
-        Thank you for coming to <br />
-        my website
-      </p>
-    </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div class="navbar__logo">
+          <img src="./imgs/favicon.png" alt="Minseok favicon" />
+          <span>Minseok Oh</span>
+        </div>
+        <div class="navbar__profile-picture">
+          <img src="./imgs/minseok.png" alt="Minseok's picture" />
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">
+            <i class="fa-solid fa-house-user"></i>Home
+          </li>
+          <li class="navbar__menu__item">
+            <i class="fa-solid fa-briefcase"></i> About
+          </li>
+          <li class="navbar__menu__item">
+            <i class="fa-solid fa-code"></i> Skills
+          </li>
+          <li class="navbar__menu__item">
+            <i class="fa-solid fa-list-check"></i> Myworks
+          </li>
+        </ul>
+      </nav>
+      <!-- Home -->
+      <section id="home">
+        <!-- <p>
+          <i></i> I'm Minseok <br />
+          Thank you for coming to <br />
+          my websit
+        </p> -->
+      </section>
+    </div>
     <!-- About -->
-    <section id="about">
+    <!-- <section id="about">
       <h1>About me</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum optio
@@ -57,9 +72,9 @@
           <div class="major__description"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Skills -->
-    <section id="skills">
+    <!-- <section id="skills">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -102,9 +117,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Myworks -->
-    <section id="works">
+    <!-- <section id="works">
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="works__categories">
@@ -130,6 +145,6 @@
           </div>
         </a>
       </div>
-    </section>
+    </section> -->
   </body>
 </html>
