@@ -122,4 +122,29 @@ body {
 #home {
   color: var(--color-white);
   flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__greeting {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-periwinkle-crayola);
+}
+
+.home__handshake {
+  color: var(--color-periwinkle-crayola);
+  animation-name: handshake;
+  transform-origin: 50% 50%;
+  animation: handshake ease-in-out 1s infinite alternate;
+}
+
+@keyframes handshake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
 }
