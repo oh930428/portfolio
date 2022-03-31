@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minseok's Portfolio</title>
+    <title>프론트엔드 개발자 오민석</title>
     <meta
       name="description"
       content="Minseok's Portfolio No FrameWork version"
@@ -53,81 +53,189 @@
         <h3>Hey! &nbsp; What's Up?</h3>
         <h1>I'm a &nbsp<span class="typeing-text"></span></h1>
         <a href="#about"><button class="btn">About Me</button></a>
-        <div class="share">
-          <i class="fa-brands fa-google"></i>
-          <i class="fa-solid fa-phone"></i>
-          <i class="fa-brands fa-github"></i>
-        </div>
       </section>
 
       <!-- About -->
       <section class="about" id="about">
-        <h1>About me</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum optio
-          repudiandae consequatur temporibus quo possimus non consequuntur Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Harum optio
-          repudiandae consequatur temporibus quo possimus non consequuntur Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Harum optio
-          repudiandae consequatur temporibus quo possimus non consequuntur Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Harum optio
-          repudiandae consequatur temporibus quo possimus non consequuntur
-        </p>
-        <div class="about__majors">
-          <div class="major">
-            <div class="major__date"></div>
-            <div class="major__title"></div>
-            <div class="major__description"></div>
-          </div>
+        <div class="title">
+          <h1>About Me</h1>
+          <p>
+            질문은 창피한게 아니다 질문하지 않는게 창피한 것이다! <br />
+            좌우명을 가진 개발자입니다.
+          </p>
         </div>
+        <article class="info">
+          <ul>
+            <li><span>Name:</span><span>오민석</span></li>
+            <li>
+              <span>address:</span
+              ><span>경기도 화성시 동탄순환대로 19길 59</span>
+            </li>
+            <li><span>Email:</span><span>oh930428@gmail.com</span></li>
+            <li><span>Phone:</span><span>010-4148-3370</span></li>
+          </ul>
+        </article>
+        <article>
+          <!-- TODO: 아이콘 클릭시 텍스트 복사하기 기능 추가 -->
+          <div class="share">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </article>
       </section>
 
       <!-- Skills -->
-      <!-- <section id="skills">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          saepe corporis quibusdam illum assumenda inventore velit ipsam
-          temporibus
-        </p>
+      <section class="skills" id="skills">
+        <h1 class="title">Skills</h1>
         <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__decription">
-                <span>HTML</span>
-                <span>80%</span>
+          <ul>
+            <li>
+              <h3>[Stack]</h3>
+              <div class="stack-icon">
+                <span>
+                  <img src="imgs/stackIcon/react.png" alt="React" />React
+                </span>
+                <span>
+                  <img
+                    src="imgs/stackIcon/javascript.png"
+                    alt="JavaScript"
+                  />JavaScript
+                </span>
+                <span>
+                  <img src="imgs/stackIcon/html5.png" alt="html5" />HTML5
+                </span>
+                <span> <img src="imgs/stackIcon/css.png" alt="css" />CSS </span>
+                <span>
+                  <img src="imgs/stackIcon/mysql.png" alt="MySQL" />MySQL
+                </span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
+            </li>
+            <li>
+              <h3>[ Studing ]</h3>
+              <div class="stack-icon">
+                <span>
+                  <img
+                    src="imgs/stackIcon/typescript.png"
+                    alt="TypeScript"
+                  />TypeScript
+                </span>
+                <span>
+                  <img src="imgs/stackIcon/redux.png" alt="Redux" />Redux
+                </span>
+                <span>
+                  <img
+                    src="imgs/stackIcon/react.png"
+                    alt="React-Native"
+                  />React-Native
+                </span>
               </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__lists">
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__lists">
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <h3>[ Tools ]</h3>
+              <div class="stack-icon">
+                <span> <img src="imgs/stackIcon/git.png" alt="Git" />Git </span>
+                <span>
+                  <img src="imgs/stackIcon/github.png" alt="GitHub" />GitHub
+                </span>
+                <span>
+                  <img src="imgs/stackIcon/slack.png" alt="Slack" />Slack
+                </span>
+                <span>
+                  <img src="imgs/stackIcon/jira.png" alt="Jira" />Jira
+                </span>
+                <span>
+                  <img
+                    src="imgs/stackIcon/visual-studio-code.png"
+                    alt="VSC"
+                  />VSCode
+                </span>
+                <span>
+                  <img src="imgs/stackIcon/figma.png" alt="Figma" />Figma
+                </span>
+              </div>
+            </li>
+          </ul>
         </div>
-      </section> -->
+        <article class="skills-lists">
+          <div class="skills-list">
+            <div class="skills-data">
+              <div class="skills-title skills-react">
+                <h3 class="skills-name">React</h3>
+                <span class="skills-number">80%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-react"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-title skills-typescript">
+                <h3 class="skills-name">TypeScript</h3>
+                <span class="skills-number">55%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-typescript"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-title skills-css">
+                <h3 class="skills-name">CSS3</h3>
+                <span class="skills-number">85%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-css"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-title skills-reactNative">
+                <h3 class="skills-name">React-Native</h3>
+                <span class="skills-number">70%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-reactNative"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skills-list">
+            <div class="skills-data">
+              <div class="skills-title skills-javascript">
+                <h3 class="skills-name">JavaScript</h3>
+                <span class="skills-number">87%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-javascript"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-title skills-html">
+                <h3 class="skills-name">HTML5</h3>
+                <span class="skills-number">86%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-html"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-title skills-redux">
+                <h3 class="skills-name">Redux</h3>
+                <span class="skills-number">70%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-redux"></span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-title skills-mysql">
+                <h3 class="skills-name">MySQL</h3>
+                <span class="skills-number">89%</span>
+              </div>
+              <div class="skills-bar">
+                <span class="skills-percentage skills-mysql"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
 
       <!-- Myworks -->
       <!-- <section id="works">
@@ -156,7 +264,7 @@
             </div>
           </a>
         </div>
-      </section> -->
+      </section>  -->
     </div>
   </body>
 </html>
