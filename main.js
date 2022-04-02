@@ -3,3 +3,5 @@ const type = new Typed(".typeing-text", {
   typeSpeed: 250,
   loop: true,
 });
+
+// TODO: Project 탭 클릭시 관련 프로젝트로 변경 기능
