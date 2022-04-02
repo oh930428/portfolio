@@ -1,6 +1,7 @@
 /* Global */
 :root {
   /* color */
+  --color-lessWhite: #d5e3ff;
   --color-white: #fff;
   --color-black: #111519;
   --color-ftColor: #94b5cc;
@@ -430,6 +431,118 @@ article {
 
 .skills-mysql {
   width: 89%;
+}
+
+/* Myworks */
+.projects {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  background-color: var(--color-moreTeriary);
+}
+
+.projects .projects__title {
+  padding: 1.5rem;
+  font-size: var(--font-xlarge);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+}
+
+.projects .projects__main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.projects .projects__categories {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  background-color: var(--color-lessFtColor);
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.projects .projects__categories .category__btn {
+  font-size: var(--font-semi-medium);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.projects .projects__categories div:first-child {
+  border-top-left-radius: 0.7rem;
+}
+
+.projects .projects__categories div:last-child {
+  border-top-right-radius: 0.7rem;
+}
+
+.projects .projects__categories .category__btn:hover {
+  background-color: var(--color-lessWhite);
+}
+
+.projects .projects__categories .active {
+  background-color: var(--color-white);
+}
+.projects .projects__categories .active:hover {
+  background-color: var(--color-white);
+}
+
+.projects .projects_list {
+  width: 100%;
+  height: 25rem;
+  background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.projects .projects_list .project {
+  background-size: cover;
+  transition: 0.5s;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem var(--color-lessFtColor);
+}
+
+.project-one {
+  background: url("https://image.shutterstock.com/image-photo/cloud-computing-concept-connect-businessman-260nw-586520003.jpg")
+    center no-repeat;
+}
+
+.project-two {
+  background: url("https://image.shutterstock.com/image-photo/developer-working-on-code-late-260nw-741248929.jpg")
+    center no-repeat;
+}
+
+.project-three {
+  background: url("https://image.shutterstock.com/image-photo/sql-wooden-cubes-letters-on-260nw-2114370734.jpg")
+    center no-repeat;
+}
+
+.projects .projects_list .project:hover {
+  z-index: 100;
+  transform: scale(1.2);
+}
+
+.projects .projects_list .project .project__description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-tertiary);
+}
+
+.projects .projects_list .project .project__description h3,
+.projects .projects_list .project .project__description span {
+  color: var(--color-ftColor);
+  font-weight: var(--weight-bold);
 }
 
 /* TODO 웹브라우저 사이즈별 반응형으로 ! */
