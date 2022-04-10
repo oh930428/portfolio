@@ -59,7 +59,7 @@ html {
 body {
   height: 100vh;
   background: 50% 50% url("./imgs//backgrounds/macbook.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -442,7 +442,8 @@ article {
 }
 
 .projects .projects__title {
-  padding: 1.5rem;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
   font-size: var(--font-xlarge);
   font-weight: var(--weight-bold);
   color: var(--color-black);
@@ -451,8 +452,8 @@ article {
 .projects .projects__main {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: space-around;
+  padding-inline: 1rem;
 }
 
 .projects .projects__categories {
@@ -469,8 +470,8 @@ article {
   font-size: var(--font-semi-medium);
   font-weight: var(--weight-bold);
   color: var(--color-black);
-  padding: 1rem;
   cursor: pointer;
+  padding: 0.3rem;
   transition: 0.5s;
 }
 
@@ -495,35 +496,23 @@ article {
 
 .projects .projects_list {
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   background-color: var(--color-white);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-  gap: 1rem;
+  grid-template-columns: repeat(2, 0.3fr);
+  grid-template-rows: repeat(2, 0.3fr);
+  grid-gap: 1rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
 }
 
 .projects .projects_list .project {
-  background-size: cover;
-  transition: 0.5s;
   display: flex;
+  flex-flow: column;
   align-items: flex-end;
   box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem var(--color-lessFtColor);
-}
-
-.project-one {
-  background: url("https://image.shutterstock.com/image-photo/cloud-computing-concept-connect-businessman-260nw-586520003.jpg")
-    center no-repeat;
-}
-
-.project-two {
-  background: url("https://image.shutterstock.com/image-photo/developer-working-on-code-late-260nw-741248929.jpg")
-    center no-repeat;
-}
-
-.project-three {
-  background: url("https://image.shutterstock.com/image-photo/sql-wooden-cubes-letters-on-260nw-2114370734.jpg")
-    center no-repeat;
+  transition: 0.5s;
+  position: relative;
 }
 
 .projects .projects_list .project:hover {
@@ -531,7 +520,14 @@ article {
   transform: scale(1.2);
 }
 
+.projects .projects_list .project img {
+  width: 17rem;
+  height: 14rem;
+}
+
 .projects .projects_list .project .project__description {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -543,6 +539,8 @@ article {
 .projects .projects_list .project .project__description span {
   color: var(--color-ftColor);
   font-weight: var(--weight-bold);
+  font-size: var(--font-regular);
+  white-space: nowrap;
 }
 
 /* TODO 웹브라우저 사이즈별 반응형으로 ! */
